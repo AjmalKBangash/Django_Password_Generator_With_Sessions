@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="static/pass-generator.css?{% now 'U' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>I am Passsword Generator</h1>
+      {% comment %} <form method="POST">
+        <select
+        <button type="submit">Generate</button>
+        <p>{{varr}}</p>
+      </form> {% endcomment %}
+      <p>{{result}}</p>
+      <form >
+        <div class="optdiv">
+                  <input type="submit" name="Input_Generate" value="Generate" />
+        <select value="Select Items" name="Length" >
+          <option value="7" class="optt">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12" selected="selected">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+          <div class="labell">
+              <label for="uppercase">Upper Case</label>
+              <input id="uppercase" type="checkbox" name="uppercase" checked class="label_input" />
+              <label for="lowercase">Lower Case</label>
+              <input id="lowercase" type="checkbox" name="lowercase" checked class="label_input" />
+              <label for="specialcharacters">Special Characters</label>
+              <input id="specialcharacters" type="checkbox" name="specialcharacters" checked class="label_input" />
+              <label for="numbers">Numbers</label>
+              <input id="numbers" type="checkbox" name="numbers" checked class="label_input" />
+          </div>
+      </form>
+
+      <div class="sessions">
+        <h4>Previously Generated Passwords</h4>
+        <ul>
+          <li>gvhcvc6576rgvhg</li>
+        </ul>
+      </div>
+    </div>
+
+    {% comment %}
+    <script src="" async defer></script>
+    {% endcomment %}
+
+  </body>
+</html>
