@@ -4,29 +4,25 @@ body {
 .container {
   margin: 0 5%;
   height: 100%;
-  border: 5px solid rgb(0, 255, 255);
+  border: 5px solid rgba(0, 255, 255, 0.644);
   border-radius: 10px;
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
-  background-color: rgba(0, 255, 255, 0.356);
+  background-color: rgba(0, 255, 255, 0.151);
 }
 h1 {
   text-align: center;
-  background-color: rgba(255, 208, 0, 0.5);
-  border: 2px solid rgb(255, 208, 0);
+  /* background-color: rgba(255, 208, 0, 0.5); */
+  /* border: 2px solid rgb(255, 208, 0); */
   border-radius: 10px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 50px;
-  color: rgba(0, 0, 0, 0.795);
+  color: brown;
 }
 p {
   width: 1000px;
   justify-content: center;
-  margin: 0% auto;
+  margin: 3% auto;
   text-align: center;
-  background-color: rgba(137, 43, 226, 0.39);
-  border: 2px solid rgb(137, 43, 226);
+  border-bottom: 2px solid black;
   border-radius: 10px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -35,7 +31,6 @@ p {
 .optdiv {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
   text-align: center;
   margin: 10px auto;
   width: fit-content;
@@ -54,7 +49,7 @@ select {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 select:hover {
-  color: rgba(240, 248, 255, 0.548);
+  background-color: green;
 }
 input {
   margin: 5px;
@@ -69,8 +64,7 @@ input {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 input:hover {
-  /* font-size: 22px; */
-  color: rgba(240, 248, 255, 0.548);
+  background-color: green;
 }
 /* option {
   text-align: center;
@@ -90,14 +84,12 @@ input:hover {
   width: fit-content;
   margin: 5px auto;
   outline: none;
-  /* width: 100%; */
 }
 .label_input {
   left: 100px !important;
   padding-left: 100px;
-  /* position: absolute; */
   margin: 5px;
-  background-color: rgba(226, 43, 104, 0.575);
+  /* background-color: rgba(226, 43, 104, 0.575); */
 }
 #uppercase {
   position: absolute;
@@ -122,18 +114,23 @@ label {
   width: fit-content;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 25px;
-  background-color: rgba(226, 43, 104, 0.575);
-  border: 1px solid rgb(226, 43, 104);
+  /* background-color: rgba(226, 43, 104, 0.575); */
+  /* border: 1px solid rgb(226, 43, 104); */
   border-radius: 4px;
-  box-shadow: 5px 5px 8px rgba(226, 43, 104, 0.589);
+  /* box-shadow: 1px 1px 5px 2px black; */
   padding: 0 5px;
   margin: 8px;
   color: aliceblue;
   color: rgba(0, 0, 0, 0.795);
 }
 .sessions {
+  width: fit-content;
   display: flex;
-  justify-content: end;
+  margin: 0 auto;
+  /* border: 2px solid red; */
   flex-direction: column;
-  background-color: rgba(0, 0, 255, 0.185);
+  /* background-color: rgba(0, 0, 255, 0.185); */
+}
+.sessions li {
+  list-style-type: decimal;
 }

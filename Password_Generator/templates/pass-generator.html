@@ -44,11 +44,13 @@
               <input id="numbers" type="checkbox" name="numbers" checked class="label_input" />
           </div>
       </form>
-
+    <hr/>
       <div class="sessions">
         <h4>Previously Generated Passwords</h4>
         <ul>
-          <li>gvhcvc6576rgvhg</li>
+          {% for i in sessions_result %}
+          <li>{{i}}</li>
+          {% endfor %}
         </ul>
       </div>
     </div>
